@@ -8,11 +8,36 @@
     flex-direction: column;
   }
   .home__left {
-    .left__socials {
-      height: 35%;
-    }
     .left__menu {
+      color: white;
+      width: 40%;
       height: 100%;
+      .menu__socials {
+        height: 35%;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        .socials__facebook, .socials__instagram {
+          padding: .5rem 0;
+          img {
+            width: 2rem;
+          }
+        }
+      }
+      .menu__menu {
+        height: 65%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        ul {
+          li {
+            height: 3rem;
+            line-height: 3rem;
+            text-transform: uppercase;
+            color: white;
+          }
+        }
+      }
     }
   }
   .home__center {

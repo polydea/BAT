@@ -23,7 +23,7 @@
     justify-content: flex-end;
     align-items: flex-end;
     ul {
-      li {
+      .menu__item {
         height: 3rem;
         line-height: 3rem;
         text-transform: uppercase;
@@ -31,6 +31,13 @@
         font-weight: 100;
         color: white;
         cursor: pointer;
+      }
+    }
+  }
+  .menu__menu--dark {
+    ul {
+      .menu__item {
+        color: $black;
       }
     }
   }

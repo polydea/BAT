@@ -9,7 +9,7 @@ $(function scrollify() {
         easing: "easeOutExpo",
         scrollSpeed: 1100,
         offset: 0,
-        scrollbars: true,
+        scrollbars: false,
         standardScrollElements: "",
         setHeights: true,
         overflowScroll: true,

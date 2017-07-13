@@ -15,7 +15,8 @@
     "gulp-sass": "^3.0.0",
     "gulp-sourcemaps": "^1.9.1",
     "gulp-uglify": "^2.0.0",
-    "npm-zepto": "^1.1.7",
+    "jquery": "^3.2.1",
+    "jquery-scrollify": "^1.0.14",
     "waypoints": "^4.0.1"
   }
 }

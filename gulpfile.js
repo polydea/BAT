@@ -49,7 +49,9 @@ gulp.task('fonts', function () {
 // Task scripts
 gulp.task('scripts', function () {
   return gulp.src([
-    'node_modules/npm-zepto/zepto/dist/zepto.js',
+    'node_modules/jquery/dist/jquery.min.js',
+    'node_modules/jquery-scrollify/jquery.scrollify.min.js',
+    'node_modules/waypoints/lib/jquery.waypoints.min.js',
     'src/**/*.js',
   ])
   .pipe(concat('scripts.js'))

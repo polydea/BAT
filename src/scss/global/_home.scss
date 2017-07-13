@@ -1,4 +1,5 @@
 .home {
+  width: 100%;
   justify-content: space-between;
   background-color: $darkBrown;
   .home__part {
@@ -8,41 +9,6 @@
     flex-direction: column;
   }
   .home__left {
-    .left__menu {
-      width: 40%;
-      height: 100%;
-      color: white;
-      .menu__socials {
-        height: 35%;
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
-        padding-top: 1rem;
-        .socials__facebook, .socials__instagram {
-          padding: .5rem 0;
-          img {
-            width: 2rem;
-          }
-        }
-      }
-      .menu__menu {
-        width: 85;
-        height: 58%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        ul {
-          li {
-            height: 3rem;
-            line-height: 3rem;
-            text-transform: uppercase;
-            font-family: Akkurat;
-            font-weight: 100;
-            color: white;
-          }
-        }
-      }
-    }
   }
   .home__center {
     @include flexCenter();

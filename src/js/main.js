@@ -20,7 +20,7 @@ $(function scrollify() {
     });
 });
 /* * * *
-* MENU LINK
+* MENU LINKS
 * * * */
 $(".menu__item").click(function(){
     switch(this.className) {
@@ -36,5 +36,21 @@ $(".menu__item").click(function(){
         case 'menu__item item__contact':
         $.scrollify.move("#Contact");
         break;
+    }
+});
+
+/* * * *
+* MENU COLOR CHANGE
+* * * */
+$(window).scroll(function (event) {
+    var scroll = $(window).scrollTop();
+    console.log('SCROLL : '+scroll);
+    if (scroll > 10) {
+        // $('.menu__item').css('color', 'black');
+        $('.menu__menu').addClass('menu__menu--dark');
+    }
+    if (scroll < 250) {
+        // $('.menu__item').css('color', 'white');
+        $('.menu__menu').removeClass('menu__menu--dark');
     }
 });

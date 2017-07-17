@@ -1,14 +1,14 @@
 .menu {
-  width: 15%;
+  width: 10%;
   height: 100%;
   position: fixed;
-  color: white;
+  color: $white;
   .menu__socials {
-    height: 35%;
+    height: 30%;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    padding-top: 1rem;
+    justify-content: flex-end;
     .socials__facebook, .socials__instagram {
       padding: .5rem 0;
       img {
@@ -18,18 +18,19 @@
   }
   .menu__menu {
     width: 85;
-    height: 58%;
+    height: 63%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     ul {
       .menu__item {
-        height: 3rem;
-        line-height: 3rem;
+        height: 4rem;
+        line-height: 4rem;
         text-transform: uppercase;
+        text-align: right;
         font-family: Akkurat;
         font-weight: 100;
-        color: white;
+        color: $white;
         cursor: pointer;
       }
     }

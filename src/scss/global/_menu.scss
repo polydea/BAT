@@ -26,7 +26,7 @@
     ul {
       .menu__item {
         height: 4rem;
-        line-height: 4rem;
+        line-height: 2rem;
         text-transform: uppercase;
         text-align: right;
         font-family: Akkurat;
@@ -34,6 +34,19 @@
         color: $white;
         cursor: pointer;
         transition: all .3s ease;
+        .item__line {
+          width: 0;
+          height: 3px;
+          background-color: $lightBrown;
+          transition: all .3s ease;
+        }
+      }
+      .menu__item--active {
+        color: $lightBrown!important;
+        font-weight: 600;
+        .item__line {
+          width: 100%;
+        }
       }
     }
     .menu__bar {
@@ -43,6 +56,7 @@
       background-color: #FCF3D8;
       .bar__section {
         height: 25%;
+        transition: all .3s ease;
       }
       .bar__section--active {
         background-color: $lightBrown;

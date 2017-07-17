@@ -1,7 +1,8 @@
 .home {
   width: 100%;
   justify-content: space-between;
-  background-color: $darkBrown;
+  background: #292119;
+  background-image: -webkit-radial-gradient(center, circle cover, #292119 25%, #060303 55%);
   .home__part {
     width: calc(100%/3);
     height: 100%;

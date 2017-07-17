@@ -1,5 +1,5 @@
 .menu {
-  width: 10%;
+  width: 12%;
   height: 100%;
   position: fixed;
   color: $white;
@@ -8,7 +8,8 @@
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
+    padding-right: 1.5rem;
     .socials__facebook, .socials__instagram {
       padding: .5rem 0;
       img {
@@ -33,6 +34,18 @@
         color: $white;
         cursor: pointer;
         transition: all .3s ease;
+      }
+    }
+    .menu__bar {
+      width: 5px;
+      height: 100%;
+      margin-left: 1rem;
+      background-color: #FCF3D8;
+      .bar__section {
+        height: 25%;
+      }
+      .bar__section--active {
+        background-color: $lightBrown;
       }
     }
   }

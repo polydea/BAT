@@ -69,22 +69,34 @@
     width: 100vw;
     height: 5rem;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     background-color: $lightBrown;
     color: $white;
-    .footer__icon {
-      position: absolute;
-      left: 5%;
-    }
-    .footer__socials {
+    .footer__content {
+      width: 88%;
       display: flex;
-      padding: 0 3rem;
-      .socials__facebook, .socials__instagram {
-        padding: 0 .5rem;
-        img {
-          width: 2rem;
+      justify-content: center;
+      align-items: center;
+      .footer__icon {
+        position: absolute;
+        left: 5%;
+      }
+      .footer__socials {
+        display: flex;
+        padding: 0 3rem;
+        .socials__facebook, .socials__instagram {
+          padding: 0 .5rem;
+          img {
+            width: 2rem;
+          }
         }
+      }
+      .footer__mentions, .footer__credits {
+        width: 15%;
+      }
+      .footer__mentions {
+        text-align: right;
       }
     }
   }

@@ -7,15 +7,19 @@
     width: 88%;
     height: 40%;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     form {
       width: 50%;
       flex-flow: column wrap;
       color: $lightBrown;
-      input {
+      input, textarea {
         width: 100%;
         padding: 1.5rem 0;
         border-bottom: 1px solid $lightBrown;
+      }
+      textarea {
+        height: auto;
       }
       .form__name, .form__surname {
         width: 48%;
@@ -32,10 +36,34 @@
         align-self: flex-start;
       }
     }
+    .form__text {
+      padding: 2rem;
+      color: $lightBrown;
+      text-align: center;
+      p {
+        line-height: 1.3rem;
+      }
+      img {
+        padding: .7rem;
+      }
+    }
   }
   .contact__infos {
-    width: 100%;
-    height: 40%;
+    width: 88%;
+    height: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .infos__mail, .infos__phone {
+      color: $lightBrown;
+      text-align: center;
+      img {
+        padding: 1rem;
+      }
+      p {
+        line-height: 1.3rem;
+      }
+    }
   }
   .contact__footer {
     width: 100vw;

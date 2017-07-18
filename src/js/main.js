@@ -39,6 +39,23 @@ $(".menu__item").click(function(){
     }
 });
 
+$(".bar__section").click(function(){
+    switch(this.className) {
+        case 'bar__section section__home':
+        $.scrollify.move("#Accueil");
+        break;
+        case 'bar__section section__news':
+        $.scrollify.move("#News");
+        break;
+        case 'bar__section section__recipes':
+        $.scrollify.move("#Recettes");
+        break;
+        case 'bar__section section__contact':
+        $.scrollify.move("#Contact");
+        break;
+    }
+});
+
 /* * * *
 * MENU COLOR CHANGE
 * * * */

@@ -71,3 +71,15 @@ $(window).scroll(function (event) {
         $('.menu__menu').removeClass('menu__menu--dark');
     }
 });
+
+/* * * *
+* EVENTS SHOWING
+* * * */
+$('.links__event').click(function() {
+    $('.news').fadeOut();
+    $('.medias').fadeIn();
+});
+$('.medias__close').click(function() {
+    $('.medias').fadeOut();
+    $('.news').fadeIn();
+});

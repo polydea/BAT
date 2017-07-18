@@ -73,15 +73,15 @@
     align-items: center;
     background-color: $lightBrown;
     color: $white;
+    .footer__icon {
+      position: absolute;
+      left: 5%;
+    }
     .footer__content {
       width: 88%;
       display: flex;
       justify-content: center;
       align-items: center;
-      .footer__icon {
-        position: absolute;
-        left: 5%;
-      }
       .footer__socials {
         display: flex;
         padding: 0 3rem;

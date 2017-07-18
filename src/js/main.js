@@ -61,7 +61,6 @@ $(".bar__section").click(function(){
 * * * */
 $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
-    console.log('SCROLL : '+scroll);
     if (scroll > 10) {
         // $('.menu__item').css('color', 'black');
         $('.menu__menu').addClass('menu__menu--dark');

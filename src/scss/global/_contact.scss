@@ -1,10 +1,45 @@
 .contact {
   display: flex;
+  justify-content: flex-end;
   align-items: flex-end;
-  flex-direction: row-reverse;
+  flex-direction: column;
+  .contact__form {
+    width: 88%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    form {
+      width: 50%;
+      flex-flow: column wrap;
+      color: $lightBrown;
+      input {
+        width: 100%;
+        padding: 1.5rem 0;
+        border-bottom: 1px solid $lightBrown;
+      }
+      .form__name, .form__surname {
+        width: 48%;
+      }
+      .form__name {
+        margin-right: 3%;
+      }
+      button {
+        height: 35px;
+        min-height: 35px;
+        cursor: pointer;
+        margin-top: 1rem;
+        border-bottom: 3px solid $lightBrown;
+        align-self: flex-start;
+      }
+    }
+  }
+  .contact__infos {
+    width: 100%;
+    height: 40%;
+  }
   .contact__footer {
     width: 100vw;
-    height: 7rem;
+    height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;

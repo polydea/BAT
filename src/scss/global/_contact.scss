@@ -1,3 +1,28 @@
 .contact {
-  
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  .contact__footer {
+    width: 100vw;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $lightBrown;
+    color: $white;
+    .footer__icon {
+      position: absolute;
+      left: 5%;
+    }
+    .footer__socials {
+      display: flex;
+      padding: 0 3rem;
+      .socials__facebook, .socials__instagram {
+        padding: 0 .5rem;
+        img {
+          width: 2rem;
+        }
+      }
+    }
+  }
 }

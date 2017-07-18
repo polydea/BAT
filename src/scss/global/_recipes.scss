@@ -1,38 +1,42 @@
 body{
 	font-family: “/fonts/Akkurat-light”,sans-  serif;
 }
+#ms-left,#ms-right{
+	display: flex;
+}
 .recipe{
 	display: flex;
 }
-img{
-	width: auto;
-	height: 100vh;
+.recipe__img{
+	img{
+		width: 90%;
+		height: 100vh;
+	}
 }
 .liste{
 	color:#d0a84f;
-	padding: 2em;
+	padding-top: 2em;
+	li{
+		padding-bottom: .2em;
+	}
+	a:hover{
+		border-bottom: 1px solid;
+	}
 }
-li{
-	padding-bottom: .2em;
-}
-a:hover{
-	border-bottom: 1px solid;
-}
+
 .recipe__txt{
 	padding: 5em;
 	width: 500px;
-}
-
-h1{
-	color:#d0a84f;
-	margin-bottom: 2rem;
-	padding-bottom: 2rem;
-	border-bottom: 3px solid black;
+	h1{
+		color:#d0a84f;
+		margin-bottom: 2rem;
+		padding-bottom: 2rem;
+		border-bottom: 3px solid black;
+	}
 }
 .recipe__link{
-	padding-left: 2em;
 	color:#d0a84f;
-}
-.recipe__link > a{
-	border-bottom: none;
+	a{
+		border-bottom: none;
+	}
 }

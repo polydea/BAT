@@ -1,3 +1,103 @@
 .contact {
-  
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  .contact__form {
+    width: 88%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    form {
+      width: 50%;
+      flex-flow: column wrap;
+      color: $lightBrown;
+      input, textarea {
+        width: 100%;
+        padding: 1.5rem 0;
+        border-bottom: 1px solid $lightBrown;
+      }
+      textarea {
+        height: auto;
+      }
+      .form__name, .form__surname {
+        width: 48%;
+      }
+      .form__name {
+        margin-right: 3%;
+      }
+      button {
+        height: 35px;
+        min-height: 35px;
+        cursor: pointer;
+        margin-top: 1rem;
+        border-bottom: 3px solid $lightBrown;
+        align-self: flex-start;
+      }
+    }
+    .form__text {
+      padding: 2rem;
+      color: $lightBrown;
+      text-align: center;
+      p {
+        line-height: 1.3rem;
+      }
+      img {
+        padding: .7rem;
+      }
+    }
+  }
+  .contact__infos {
+    width: 88%;
+    height: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .infos__mail, .infos__phone {
+      color: $lightBrown;
+      text-align: center;
+      img {
+        padding: 1rem;
+      }
+      p {
+        line-height: 1.3rem;
+      }
+    }
+  }
+  .contact__footer {
+    width: 100vw;
+    height: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: $lightBrown;
+    color: $white;
+    .footer__icon {
+      position: absolute;
+      left: 5%;
+    }
+    .footer__content {
+      width: 88%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .footer__socials {
+        display: flex;
+        padding: 0 3rem;
+        .socials__facebook, .socials__instagram {
+          padding: 0 .5rem;
+          img {
+            width: 2rem;
+          }
+        }
+      }
+      .footer__mentions, .footer__credits {
+        width: 15%;
+      }
+      .footer__mentions {
+        text-align: right;
+      }
+    }
+  }
 }

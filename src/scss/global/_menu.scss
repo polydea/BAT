@@ -4,7 +4,7 @@
   position: fixed;
   color: $white;
   .menu__socials {
-    height: 30%;
+    height: 25%;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
@@ -19,13 +19,16 @@
   }
   .menu__menu {
     width: 85;
-    height: 63%;
+    height: 50%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     ul {
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
       .menu__item {
-        height: 4rem;
         line-height: 2rem;
         text-transform: uppercase;
         text-align: right;
@@ -55,6 +58,7 @@
       margin-left: 1rem;
       background-color: #FCF3D8;
       .bar__section {
+        cursor: pointer;
         height: 25%;
         transition: all .3s ease;
       }

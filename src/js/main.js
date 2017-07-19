@@ -72,13 +72,22 @@ $(window).scroll(function (event) {
 });
 
 /* * * *
-* EVENTS SHOWING
+* MEDIAS SHOWING
 * * * */
-$('.links__event').click(function() {
-    $('.news').fadeOut();
-    $('.medias').fadeIn();
+$('.links__medias').click(function() {
+    mediasDisplay();
 });
 $('.medias__close').click(function() {
-    $('.medias').fadeOut();
-    $('.news').fadeIn();
+    mediasHide();
 });
+
+var mediasDisplay = function() {
+    $('.news').addClass('news--hide');
+    $('.medias--hide').addClass('medias');
+    $('.medias--hide').removeClass('medias--hide');
+};
+
+var mediasHide = function () {
+    $('.medias').addClass('medias--hide');
+    $('.news--hide').removeClass('news--hide');
+}

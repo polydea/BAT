@@ -1,9 +1,13 @@
+.medias--hide {
+  display: none!important;
+}
 .medias {
   width: 88%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   position: relative;
+  transition: all 1s ease;
   .medias__close {
     color: $lightBrown;
     cursor: pointer;

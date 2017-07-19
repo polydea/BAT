@@ -11,3 +11,7 @@ html, body {
     @include flexCenter();
     font-family: Akkurat;
 }
+.container {
+  display: flex;
+  justify-content: flex-end;
+}

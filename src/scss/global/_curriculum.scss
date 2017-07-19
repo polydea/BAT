@@ -58,6 +58,7 @@
 			height: 25%;
 			@include flexCenter();
 			flex-direction: column;
+			cursor: pointer;
 			img {
 				width: 50%;
 				padding: 1rem;

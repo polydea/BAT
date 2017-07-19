@@ -96,6 +96,21 @@ var cvHide = function () {
 };
 
 /* * * *
+* CV ICONS LINK
+* * * */
+$('.icons__media').click(function() {
+    $.scrollify.instantMove("#News");
+    cvHide();
+    mediasDisplay();
+});
+$('.icons__events').click(function() {
+    
+});
+$('.icons__contact').click(function() {
+    $.scrollify.move("#Contact");
+    cvHide();
+});
+/* * * *
 * MEDIAS SHOWING
 * * * */
 $('.links__medias').click(function() {

@@ -1,4 +1,7 @@
 .cv {
+	width: 100%;
+	height: 100%;
+	display: flex;
 	.cv__img {
 		width: 40%;
 		height: 100%;
@@ -12,10 +15,10 @@
 	}
 	.cv__content {
 		width: 40%;
-		height: 70vh;
+		height: 100%;
 		display: flex;
 		flex-direction: column;
-		justify-content: flex-start;
+		justify-content: center;
 		padding: 0 3rem;
 		.content__author {
 			width: 70%;
@@ -64,4 +67,17 @@
 			}
 		}
 	}
+	.CV__close {
+		height: 25px;
+		position: absolute;
+		right: 3rem;
+		top: 3rem;
+		color: $lightBrown;
+		border-bottom: 2px solid $lightBrown;
+		cursor: pointer;
+	}
+}
+.cv--hide {
+	opacity: 0;
+	display: none!important;
 }

@@ -72,6 +72,29 @@ $(window).scroll(function (event) {
 });
 
 /* * * *
+* CV SHOWING
+* * * */
+$('.CV__link').click(function() {
+    cvDisplay();
+});
+$('.CV__close').click(function() {
+    cvHide();
+});
+
+var cvDisplay = function() {
+    $('.menu__menu').addClass('menu__menu--dark');
+    $('.home').addClass('home--hide');
+    $('.cv--hide').addClass('cv');
+    $('.cv--hide').removeClass('cv--hide');
+};
+
+var cvHide = function () {
+    $('.menu__menu').removeClass('menu__menu--dark');
+    $('.cv').addClass('cv--hide');
+    $('.home--hide').removeClass('home--hide');
+}
+
+/* * * *
 * MEDIAS SHOWING
 * * * */
 $('.links__medias').click(function() {

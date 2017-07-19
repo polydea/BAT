@@ -91,3 +91,24 @@ var mediasHide = function () {
     $('.medias').addClass('medias--hide');
     $('.news--hide').removeClass('news--hide');
 }
+
+/* * * *
+* RECIPES LIST SHOWING
+* * * */
+$('.recipesList__link').click(function() {
+    recipesListDisplay();
+});
+$('.recipesList__close').click(function() {
+    recipesListHide();
+});
+
+var recipesListDisplay = function() {
+    $('.recipes').addClass('recipes--hide');
+    $('.recipesList--hide').addClass('recipesList');
+    $('.recipesList--hide').removeClass('recipesList--hide');
+};
+
+var recipesListHide = function () {
+    $('.recipesList').addClass('recipesList--hide');
+    $('.recipes--hide').removeClass('recipes--hide');
+}

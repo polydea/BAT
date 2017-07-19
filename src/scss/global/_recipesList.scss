@@ -1,0 +1,8 @@
+.recipesList {
+  opacity: 1;
+  display: flex;
+}
+.recipesList--hide {
+  opacity: 0;
+  display: none!important;
+}

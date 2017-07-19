@@ -26,6 +26,10 @@
 					opacity: 1;
 				}
 			}
+			.post__next {
+				color: $lightBrown;
+				cursor: pointer;
+			}
 			img {
 				height: 100%;
 				width: auto;
@@ -58,4 +62,8 @@
 	.recipes__right {
 		width: 50%;
 	}
+}
+.recipes--hide {
+	opacity: 0;
+	display: none!important;
 }

@@ -1,47 +1,66 @@
-body{
-	font-family: “/fonts/Akkurat-light”,sans-serif;
-}
-.cv{
-	@include flexCenter();
-	.cv__img{
-		img{
-			padding-left: 2em;
+.cv {
+	.cv__img {
+		width: 40%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		img {
 			height: 70vh;
 			border-bottom: 5px solid $lightBrown;
 		}
 	}
-	.cv__txt{
-		padding: 3em;
-		width: 45%;
-		height: 100vh;
-		h1{
-			font-weight: bolder;
-			font-size: 50px;
-			border-bottom: 3px solid black;
+	.cv__content {
+		width: 40%;
+		height: 70vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		padding: 0 3rem;
+		.content__author {
+			width: 70%;
+			font-weight: bold;
+			font-size: 2.5rem;
 		}
-		h2{
+		.content__line {
+			height: 3px;
+			width: 25%;
+			margin: 1.5rem 0;
+			background-color: black;
+		}
+		.content__title {
+			width: 70%;
 			color: $lightBrown;
-			font-size: 30px;
-			padding-top: 1em;
-
+			font-size: 1.5rem;
+			font-weight: 100;
 		}
-		p{
-			padding-top: 1em;
-			padding-right: 3em;
-			font-size: 20px;
-			line-height: 1.5em;
+		.content__txt {
+			margin: 1.5rem 0;
+			font-size: 1rem;
+			font-weight: 100;
+			line-height: 1.3rem;
 		}
-		#contact{
-			padding-top: 1em;
+		.content__note {
+			padding-top: 1rem;
+			font-weight: 100;
 			color: $lightBrown;
 		}
 	}
-	.cv__icons{
-		padding-top: 5em; 
-		.cv__media{
-			padding-bottom:10em;
-			.picto{
-				width: 25%;
+	.cv__icons {
+		width: 20%;
+		height: 100%;
+		@include flexCenter();
+		flex-direction: column;
+		.icons__icon {
+			height: 25%;
+			@include flexCenter();
+			flex-direction: column;
+			img {
+				width: 50%;
+				padding: 1rem;
+			}
+			p {
+				font-weight: 100;
 			}
 		}
 	}

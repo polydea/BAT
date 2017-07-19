@@ -27,7 +27,9 @@
 				}
 			}
 			.post__next {
+				height: 20px;
 				color: $lightBrown;
+				border-bottom: 2px solid $lightBrown;
 				cursor: pointer;
 			}
 			img {

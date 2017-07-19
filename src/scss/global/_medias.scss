@@ -9,12 +9,13 @@
   position: relative;
   transition: all 1s ease;
   .medias__close {
+    height: 20px;
     color: $lightBrown;
     cursor: pointer;
     position: absolute;
     top: 5%;
     right: 5%;
-    border-bottom: 3px solid $lightBrown;
+    border-bottom: 2px solid $lightBrown;
   }
   .medias__col {
     width: 45%;
@@ -43,10 +44,10 @@
         padding-bottom: 1rem;
       }
       .post__link {
-        height: 25px;
+        height: 20px;
         color: $lightBrown;
         cursor: pointer;
-        border-bottom: 3px solid $lightBrown;
+        border-bottom: 2px solid $lightBrown;
       }
     }
   }

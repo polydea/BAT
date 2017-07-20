@@ -1,6 +1,108 @@
 .recipesList {
-  opacity: 1;
+  width: 88%;
+  height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  transition: all 1s ease;
+  opacity: 1;
+  .recipesList__left {
+    width: 20%;
+    height: 100vh;
+    @include flexCenter();
+    .left__list {
+      color: $lightBrown;
+      ul {
+        li {
+          padding: .2rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .recipesList__right {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .right__content {
+      height: 70vh;
+      width: 80%;
+      display: flex;
+      align-items: center;
+      flex-flow: column wrap;
+      position: relative;
+      .content__block {
+        .block__letter {
+          color: $lightBrown;
+          padding: 1rem 0;
+          font-size: 2rem;
+          font-weight: bold;
+        }
+        .block__list {
+          padding-bottom: 2rem;
+        }
+      }
+    }
+  }
+  .recipesList__tools {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    .tools__search, .tools__icon {
+      height: 2rem;
+      display: flex;
+      align-items: center;
+      border-left: 1px solid $lightBrown;
+      img {
+        cursor: pointer;
+        width: 1.5rem;
+        margin: 1rem;
+      }
+    }
+    .recipesList__close {
+      margin: 0 3rem;
+      height: 20px;
+      color: $lightBrown;
+      border-bottom: 2px solid $lightBrown;
+      cursor: pointer;
+    }
+  }
+  .recipesList__arrows {
+    width: 80%;
+    height: 10%;
+    bottom: 1rem;
+    position: absolute;
+    text-align: center;
+    svg {
+      width: 30px;
+      height: 36px;
+      position: absolute;
+      left: 50%;
+      margin-left: -30px;
+      bottom: 0;
+      cursor: pointer;
+      path {
+        stroke: $lightBrown;
+        fill: transparent;
+        stroke-width: 1px;  
+        animation: arrow 2s infinite;
+      }
+      path.a1 {
+        animation-delay:-1s;
+      }
+      path.a2 {
+        animation-delay:-0.5s;
+      }
+      path.a3 {
+        animation-delay:0s;
+      }
+    }
+  }
 }
 .recipesList--hide {
   opacity: 0;

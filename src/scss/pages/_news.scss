@@ -54,13 +54,14 @@
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      margin-right: .6rem;
+      margin-right: 1rem;
       .one__post {
         width: 100%;
         display: flex;
         justify-content: flex-end;
         position: relative;
-        margin: .3rem;
+        margin: .5rem;
+        overflow: hidden;
         &:hover {
           .post__content {
             opacity: 1;
@@ -109,7 +110,7 @@
       display: flex;
       justify-content: flex-end;
       position: relative;
-      margin: .3rem;
+      margin: .5rem;
       &:hover {
         .post__content {
           opacity: 1;

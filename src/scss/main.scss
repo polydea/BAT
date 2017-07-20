@@ -15,11 +15,15 @@
 @import 'global/layout';
 @import 'global/titles';
 @import 'global/menu';
-@import 'global/home';
-@import 'global/recipes';
-@import 'global/recipesList';
-@import 'global/recipe';
-@import 'global/contact';
-@import 'global/news';
-@import 'global/medias';
-@import 'global/curriculum';
+
+/* * * *
+* PAGES
+* * * */
+@import 'pages/home';
+@import 'pages/recipes';
+@import 'pages/recipesList';
+@import 'pages/recipe';
+@import 'pages/contact';
+@import 'pages/news';
+@import 'pages/medias';
+@import 'pages/curriculum';

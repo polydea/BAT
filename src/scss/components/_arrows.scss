@@ -1,0 +1,31 @@
+.arrows--animate {
+    width: 80%;
+    height: 10%;
+    bottom: 1rem;
+    position: absolute;
+    text-align: center;
+    svg {
+      width: 30px;
+      height: 36px;
+      position: absolute;
+      left: 50%;
+      margin-left: -30px;
+      bottom: 0;
+      cursor: pointer;
+      path {
+        stroke: $lightBrown;
+        fill: transparent;
+        stroke-width: 1px;  
+        animation: arrow 2s infinite;
+      }
+      path.a1 {
+        animation-delay:-1s;
+      }
+      path.a2 {
+        animation-delay:-0.5s;
+      }
+      path.a3 {
+        animation-delay:0s;
+      }
+    }
+  }

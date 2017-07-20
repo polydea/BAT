@@ -164,8 +164,8 @@ var w_home = new Waypoint({
     $('.item__news').removeClass('menu__item--active');
     $('.item__recipes').removeClass('menu__item--active');
     $('.item__contact').removeClass('menu__item--active');
-  },
-  offset: 100
+},
+offset: 100
 });
 var w_home_top = new Waypoint({
   element: $('.home'),
@@ -179,8 +179,8 @@ var w_home_top = new Waypoint({
     $('.item__news').removeClass('menu__item--active');
     $('.item__recipes').removeClass('menu__item--active');
     $('.item__contact').removeClass('menu__item--active');
-  },
-  offset: -100
+},
+offset: -100
 });
 var w_news = new Waypoint({
   element: $('.news'),
@@ -194,8 +194,8 @@ var w_news = new Waypoint({
     $('.item__home').removeClass('menu__item--active');
     $('.item__recipes').removeClass('menu__item--active');
     $('.item__contact').removeClass('menu__item--active');
-  },
-  offset: 100
+},
+offset: 100
 });
 var w_news_top = new Waypoint({
   element: $('.news'),
@@ -209,8 +209,8 @@ var w_news_top = new Waypoint({
     $('.item__home').removeClass('menu__item--active');
     $('.item__recipes').removeClass('menu__item--active');
     $('.item__contact').removeClass('menu__item--active');
-  },
-  offset: -100
+},
+offset: -100
 });
 var w_recipes = new Waypoint({
   element: $('.recipes'),
@@ -224,8 +224,8 @@ var w_recipes = new Waypoint({
     $('.item__news').removeClass('menu__item--active');
     $('.item__home').removeClass('menu__item--active');
     $('.item__contact').removeClass('menu__item--active');
-  },
-  offset: 100
+},
+offset: 100
 });
 var w_recipes_top = new Waypoint({
   element: $('.recipes'),
@@ -239,8 +239,8 @@ var w_recipes_top = new Waypoint({
     $('.item__news').removeClass('menu__item--active');
     $('.item__home').removeClass('menu__item--active');
     $('.item__contact').removeClass('menu__item--active');
-  },
-  offset: -100
+},
+offset: -100
 });
 var w_contact = new Waypoint({
   element: $('.contact'),
@@ -254,8 +254,8 @@ var w_contact = new Waypoint({
     $('.item__news').removeClass('menu__item--active');
     $('.item__recipes').removeClass('menu__item--active');
     $('.item__home').removeClass('menu__item--active');
-  },
-  offset: 100
+},
+offset: 100
 });
 var w_contact_top = new Waypoint({
   element: $('.contact'),
@@ -269,6 +269,6 @@ var w_contact_top = new Waypoint({
     $('.item__news').removeClass('menu__item--active');
     $('.item__recipes').removeClass('menu__item--active');
     $('.item__home').removeClass('menu__item--active');
-  },
-  offset: -100
+},
+offset: -100
 });

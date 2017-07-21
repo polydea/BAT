@@ -21,24 +21,26 @@ gulp.task('html', () => {
 gulp.task('style', function () {
   gulp.src([
     'src/scss/**/*.scss'
-  ])
- .pipe(plumber())
- .pipe(sourcemaps.init())
+    ])
+  .pipe(plumber())
+  .pipe(sourcemaps.init())
 
- .pipe(sass({ outputStyle: 'compressed' }))
- .pipe(autoprefixer('last 2 versions'))
-
- .pipe(sourcemaps.write('.'))
- .pipe(concat('style.min.css'))
- .pipe(gulp.dest('dist/css'))
- .pipe(sync.stream());
+  .pipe(sass({ outputStyle: 'compressed' }))
+  .pipe(sourcemaps.write('.'))
+  .pipe(concat('style.min.css'))
+  .pipe(autoprefixer({
+    browsers: ['last 2 versions'],
+    cascade: false
+  }))
+  .pipe(gulp.dest('dist/css'))
+  .pipe(sync.stream());
 });
 
 // Task Fonts
 gulp.task('fonts', function () {
   gulp.src([
     'src/fonts/**'
-  ])
+    ])
   .pipe(plumber())
   .pipe(gulp.dest('dist/fonts/'))
   .pipe(sync.stream());
@@ -52,7 +54,7 @@ gulp.task('scripts', function () {
     'node_modules/waypoints/lib/jquery.waypoints.min.js',
     'src/js/lib/*.js',
     'src/js/*.js',
-  ])
+    ])
   .pipe(concat('scripts.js'))
   .pipe(uglify())
   .pipe(gulp.dest('dist/js'))

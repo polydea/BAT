@@ -20,8 +20,7 @@ gulp.task('html', () => {
 // Task style
 gulp.task('style', function () {
   gulp.src([
-    'src/scss/**/*.scss',
-    'node_modules/font-awesome/css/font-awesome.min.css',
+    'src/scss/**/*.scss'
   ])
  .pipe(plumber())
  .pipe(sourcemaps.init())
@@ -38,8 +37,7 @@ gulp.task('style', function () {
 // Task Fonts
 gulp.task('fonts', function () {
   gulp.src([
-    'src/fonts/**',
-    'node_modules/font-awesome/fonts/**',
+    'src/fonts/**'
   ])
   .pipe(plumber())
   .pipe(gulp.dest('dist/fonts/'))

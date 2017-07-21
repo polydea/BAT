@@ -62,11 +62,9 @@ $(".bar__section").click(function(){
 $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
     if (scroll > 10) {
-        // $('.menu__item').css('color', 'black');
         $('.menu__menu').addClass('menu__menu--dark');
     }
     if (scroll < 250) {
-        // $('.menu__item').css('color', 'white');
         cvHide();
         $('.menu__menu').removeClass('menu__menu--dark');
     }
@@ -104,7 +102,9 @@ $('.icons__media').click(function() {
     mediasDisplay();
 });
 $('.icons__events').click(function() {
-    
+    $.scrollify.instantMove("#News");
+    cvHide();
+    eventsDisplay();
 });
 $('.icons__contact').click(function() {
     $.scrollify.move("#Contact");

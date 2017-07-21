@@ -5,11 +5,12 @@
   justify-content: flex-end;
   align-items: flex-start;
   z-index:2;
-  .news__left {
+  .news__left { 
     width: 55%;
     height: 100vh;
     display: flex;
     flex-flow: column wrap;
+    justify-content: center;
     padding: 2rem 0;
     img {
       width: 50px;
@@ -24,6 +25,7 @@
     }
     .left__post {
       width: 45%;
+      height: 30%;
       margin-bottom: 4rem;
       .post__title {
         font-size: 2rem;

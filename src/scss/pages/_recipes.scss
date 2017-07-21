@@ -6,7 +6,7 @@
 	align-items: center;
 	transition: all 1.5s ease;
 	.recipes__col {
-		width: 30%;
+		width: auto;
 		height: 100%;
 		padding: 3rem 0;
 		display: flex;
@@ -17,7 +17,7 @@
 			display: flex;
 			align-items: center;
 			position: relative;
-			margin: 1rem;
+			margin: 2rem;
 			cursor: pointer;
 			&:hover {
 				img {

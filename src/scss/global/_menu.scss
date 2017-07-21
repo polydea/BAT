@@ -1,19 +1,34 @@
 .menu {
   width: 12%;
   height: 100%;
+  display: flex;
+  align-items: center;
   position: fixed;
+  padding-left: 1rem;
   color: $white;
-  .menu__socials {
-    height: 25%;
+  .socials__instagram {
+    top: 6rem;
+    left: 5rem;
+  }
+  .socials__facebook {
+    top: 3rem;
+    left: 5rem;
+  }
+  .socials__facebook, .socials__instagram {
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    justify-content: center;
-    padding-right: 1.5rem;
-    .socials__facebook, .socials__instagram {
-      padding: .5rem 0;
-      img {
-        width: 2rem;
+    cursor: pointer;
+    img {
+      width: 100%;
+      height: 100%;
+      opacity: .7;
+      transition: all .4s ease;
+      &:hover {
+        opacity: 1;
       }
     }
   }

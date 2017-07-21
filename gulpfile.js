@@ -50,7 +50,8 @@ gulp.task('scripts', function () {
     'node_modules/jquery/dist/jquery.min.js',
     'node_modules/jquery-scrollify/jquery.scrollify.min.js',
     'node_modules/waypoints/lib/jquery.waypoints.min.js',
-    'src/**/*.js',
+    'src/js/lib/*.js',
+    'src/js/*.js',
   ])
   .pipe(concat('scripts.js'))
   .pipe(uglify())

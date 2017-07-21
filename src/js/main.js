@@ -177,3 +177,9 @@ var recipesListHide = function () {
     $('.recipes--hide').removeClass('recipes--hide');
 }
 
+/* * * *
+* LAZY LOADING FOR IMG
+* * * */
+$(document).ready(function() {
+    $('.lazyimg').unveil();
+});

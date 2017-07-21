@@ -17,12 +17,12 @@
   .home__center {
     @include flexCenter();
     .logo{
-      width: 70%;
+      width: 90%;
+      animation-name: logo;
+      animation-duration: 2s;
     }
   }
   .home__right {
-    color: grey;
-    font-family: “/fonts/Akkurat-light”,sans-serif;
     display: flex;
     height: 100%;
     justify-content: center;

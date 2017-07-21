@@ -26,12 +26,9 @@ gulp.task('style', function () {
   .pipe(sourcemaps.init())
 
   .pipe(sass({ outputStyle: 'compressed' }))
+  .pipe(autoprefixer('last 2 versions')) 
   .pipe(sourcemaps.write('.'))
   .pipe(concat('style.min.css'))
-  .pipe(autoprefixer({
-    browsers: ['last 2 versions'],
-    cascade: false
-  }))
   .pipe(gulp.dest('dist/css'))
   .pipe(sync.stream());
 });

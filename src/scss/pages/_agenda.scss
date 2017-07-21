@@ -6,7 +6,7 @@
 	position: relative;
 	transition: all 1s ease;
 	.agenda__content {
-		width: 70%;
+		width: 65%;
 		height: 100%;
 		display: flex;
 		justify-content: center;
@@ -79,13 +79,15 @@
 		}
 	}
 	.agenda__img {
-		border:1px solid black;
-		float: right;
-		width: 30%;
+		width: 35%;
 		height: 100%;
 		overflow: hidden;
 		img {
 			height: 100vh;
 		}
 	}
+}
+.agenda--hide {
+	opacity: 0;
+	display: none!important;
 }

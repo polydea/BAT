@@ -110,6 +110,7 @@ $('.icons__contact').click(function() {
     $.scrollify.move("#Contact");
     cvHide();
 });
+
 /* * * *
 * MEDIAS SHOWING
 * * * */
@@ -128,6 +129,27 @@ var mediasDisplay = function() {
 
 var mediasHide = function () {
     $('.medias').addClass('medias--hide');
+    $('.news--hide').removeClass('news--hide');
+};
+
+/* * * *
+* EVENTS SHOWING
+* * * */
+$('.links__events').click(function() {
+    eventsDisplay();
+});
+$('.agenda__close').click(function() {
+    eventsHide();
+});
+
+var eventsDisplay = function() {
+    $('.news').addClass('news--hide');
+    $('.agenda--hide').addClass('agenda');
+    $('.agenda--hide').removeClass('agenda--hide');
+};
+
+var eventsHide = function () {
+    $('.agenda').addClass('agenda--hide');
     $('.news--hide').removeClass('news--hide');
 };
 

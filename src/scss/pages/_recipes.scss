@@ -4,6 +4,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: all 1.5s ease;
 	.recipes__col {
 		width: 30%;
 		height: 100%;
@@ -64,8 +65,4 @@
 	.recipes__right {
 		width: 50%;
 	}
-}
-.recipes--hide {
-	opacity: 0;
-	display: none!important;
 }

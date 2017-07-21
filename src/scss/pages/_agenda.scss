@@ -1,9 +1,10 @@
 .agenda {
-	justify-content: space-between;
 	width: 88%;
 	height: 100vh;
 	display: flex;
+	justify-content: space-between;
 	position: relative;
+	opacity: 1;
 	transition: all 1s ease;
 	.agenda__content {
 		width: 65%;
@@ -86,8 +87,4 @@
 			height: 100vh;
 		}
 	}
-}
-.agenda--hide {
-	opacity: 0;
-	display: none!important;
 }

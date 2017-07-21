@@ -1,12 +1,11 @@
-.medias--hide {
-  display: none!important;
-}
 .medias {
   width: 88%;
   height: 100vh;
   display: flex;
   justify-content: center;
   position: relative;
+  z-index: 5;
+  opacity: 1;
   transition: all 1s ease;
   .medias__col {
     width: 45%;

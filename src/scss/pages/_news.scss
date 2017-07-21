@@ -4,8 +4,6 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  transition: all 1s ease;
-  opacity: 1;
   .news__left {
     width: 55%;
     height: 100vh;
@@ -153,8 +151,4 @@
     }
   }
 }
-}
-.news--hide {
-  opacity: 0;
-  display: none!important;
 }

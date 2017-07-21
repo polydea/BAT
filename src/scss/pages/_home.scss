@@ -18,8 +18,8 @@
     @include flexCenter();
     .logo{
       width: 90%;
-      animation-name: logo;
-      animation-duration: 2s;
+      transition: all 1s ease;
+      animation: logo1 2s, logo2 3s ease 2s infinite;
     }
   }
   .home__right {

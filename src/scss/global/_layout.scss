@@ -10,6 +10,7 @@ html, body {
     float: right;
     @include flexCenter();
     font-family: Akkurat;
+    background-color: $white;
 }
 .container {
   display: flex;

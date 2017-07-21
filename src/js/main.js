@@ -74,6 +74,27 @@ $(window).scroll(function (event) {
 });
 
 /* * * *
+* CV ICONS LINK
+* * * */
+$('.icons__media').click(function() {
+    $.scrollify.move("#News");
+    setTimeout(
+      function() {
+         mediasDisplay();
+      }, 1500);
+});
+$('.icons__events').click(function() {
+    $.scrollify.move("#News");
+    setTimeout(
+      function() {
+         eventsDisplay();
+      }, 1500);
+});
+$('.icons__contact').click(function() {
+    $.scrollify.move("#Contact");
+});
+
+/* * * *
 * CV SHOWING
 * * * */
 $('.CV__link').click(function() {
@@ -95,24 +116,6 @@ var cvHide = function () {
     $('.cv').addClass('cv--hide');
     $('.home--hide').removeClass('home--hide');
 };
-
-/* * * *
-* CV ICONS LINK
-* * * */
-$('.icons__media').click(function() {
-    $.scrollify.instantMove("#News");
-    cvHide();
-    mediasDisplay();
-});
-$('.icons__events').click(function() {
-    $.scrollify.instantMove("#News");
-    cvHide();
-    eventsDisplay();
-});
-$('.icons__contact').click(function() {
-    $.scrollify.move("#Contact");
-    cvHide();
-});
 
 /* * * *
 * MEDIAS SHOWING

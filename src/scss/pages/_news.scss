@@ -104,6 +104,11 @@
       @include flexCenter();
       img {
         width: 2rem;
+        opacity: .7;
+        transition: all 1s ease;
+        &:hover {
+          opacity: 1;
+        }
       }
     }
     .two__post {

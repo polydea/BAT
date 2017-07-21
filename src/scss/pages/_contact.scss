@@ -47,6 +47,11 @@
         width: 40px;
         height: 50px;
         padding: .3rem;
+        opacity: .3;
+        transition: all 1s ease;
+        &:hover {
+          opacity: 1;
+        }
       }
     }
   }
@@ -81,6 +86,11 @@
       left: 5%;
       img {
         width: 40px;
+        opacity: .3;
+        transition: all 1s ease;
+        &:hover {
+          opacity: 1;
+        }
       }
     }
     .footer__content {

@@ -16,6 +16,13 @@
       width: 50px;
       margin-bottom: 1rem;
     }
+    .left__houblon {
+      opacity: .3;
+      transition: all 1s ease;
+      &:hover {
+        opacity: 1;
+      }
+    }
     .left__post {
       width: 45%;
       margin-bottom: 4rem;

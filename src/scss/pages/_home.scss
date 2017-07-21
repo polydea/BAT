@@ -38,6 +38,10 @@
     }
     .right__link {
       padding-top: 5%;
+      opacity: .8;
+      &:hover {
+        opacity: 1;
+      }
       p {
         font-size: 1.4rem;
         line-height: 3rem;
@@ -49,11 +53,11 @@
         display: block;
         width: 0;
         height: 3px;
-        background: white;
-        transition: width .6s;
+        background: $white;
+        transition: width .8s;
       }
       &:hover:after {
-        width: 45%;
+        width: 100%;
       }
     }
   }

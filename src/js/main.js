@@ -61,6 +61,9 @@ $(".bar__section").click(function(){
 * * * */
 $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
+    eventsHide();
+    mediasHide();
+    recipesListHide();
     if (scroll > 10) {
         $('.menu__menu').addClass('menu__menu--dark');
     }

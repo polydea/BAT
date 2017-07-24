@@ -10,6 +10,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    overflow-x: scroll;
   }
   .news__left {
     width: 55%;
@@ -45,6 +46,12 @@
       margin-bottom: 4rem;
       @include mobile {
         width: 90%;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
         margin-bottom: 2rem;
       }
       .post__title {
@@ -66,6 +73,7 @@
       text-align: center;
       @include mobile {
         width: 90%;
+        height: 70vh;
         margin: 2rem 0;
       }
       div {
@@ -80,7 +88,7 @@
     display: flex;
     padding: .3rem 0;
     @include mobile {
-      width: 90%;
+      width: 100%;
     }
     .right__one {
       width: 50%;
@@ -90,6 +98,11 @@
       justify-content: center;
       align-items: center;
       margin-right: 1rem;
+      @include mobile {
+        flex-direction: row;
+        width: auto;
+        margin: 0 auto;
+      }
       .one__post {
         width: 100%;
         max-height: 30%;
@@ -98,6 +111,13 @@
         position: relative;
         margin: .5rem;
         overflow: hidden;
+        @include mobile {
+          width: 90vw;
+          max-height: 90vh;
+          margin: 0;
+          display: flex;
+          justify-content: center;
+        }
         &:hover {
           .post__content {
             opacity: 1;
@@ -107,6 +127,9 @@
           width: 100%;
           height: 100%;
           cursor: pointer;
+          @include mobile {
+            margin: 0 1rem;
+          }
         }
         .post__content {
           position: absolute;
@@ -132,6 +155,9 @@
      justify-content: flex-start;
      align-items: center;
      margin-right: .6rem;
+     @include mobile {
+       display: none;
+     }
      .two__icon {
       width: 100%;
       height: 15vh;

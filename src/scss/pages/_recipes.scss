@@ -1,3 +1,8 @@
+@include mobile {
+	.recipes__container {
+		justify-content: flex-start;
+	}
+}
 .recipes {
 	width: 88%;
 	height: 100vh;
@@ -10,6 +15,9 @@
 		height: auto;
 		flex-direction: column;
 		justify-content: flex-start;
+		.no-mobile {
+			display: none!important;
+		}
 	}
 	.recipes__col {
 		width: auto;
@@ -64,8 +72,17 @@
 				font-weight: 600;
 				transition: all .6s ease;
 				opacity: 0;
+				@include mobile {
+					width: 100%;
+					align-items: center;
+					padding: 1rem;
+					text-align: center;
+				}
 				p {
 					transform: translateX(-40%);
+					@include mobile {
+						transform: translateX(0);
+					}
 				}
 				.post__line {
 					height: 2px;
@@ -73,6 +90,9 @@
 					margin: 1rem 0;
 					background-color: #000;
 					transform: translateX(-160%);
+					@include mobile {
+						display: none;
+					}
 				}
 			}
 		}

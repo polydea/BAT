@@ -11,6 +11,9 @@ html, body {
     @include flexCenter();
     font-family: Akkurat;
     background-color: $white;
+    @include mobile {
+      max-width: 100vw;
+    }
 }
 .container {
   display: flex;

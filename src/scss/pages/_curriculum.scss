@@ -6,15 +6,29 @@
 	z-index: 5;
 	display: flex;
 	transition: all 1s ease;
+	@include mobile {
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+	}
 	.cv__img {
 		width: 40%;
 		height: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
+		@include mobile {
+			overflow: hidden;
+			height: auto;
+		}
 		img {
 			height: 70vh;
 			border-bottom: 5px solid $lightBrown;
+			@include mobile {
+				height: auto;
+				width: 100%;
+				border: 0;
+			}
 		}
 	}
 	.cv__content {
@@ -24,33 +38,58 @@
 		flex-direction: column;
 		justify-content: center;
 		padding: 0 3rem;
+		@include mobile {
+			width: 90%;
+			height: auto;
+			align-items: center;
+			justify-content: flex-start;
+			padding: 0;
+		}
 		.content__author {
 			width: 70%;
 			font-weight: bold;
 			font-size: 2.5rem;
+			@include mobile {
+				text-align: center;
+				font-size: 1.3rem;
+				margin-top: 1rem;
+			}
 		}
 		.content__line {
 			height: 3px;
 			width: 25%;
 			margin: 1.5rem 0;
 			background-color: black;
+			@include mobile {
+				display: none;
+			}
 		}
 		.content__title {
 			width: 70%;
 			color: $lightBrown;
 			font-size: 1.5rem;
 			font-weight: 100;
+			@include mobile {
+				display: none;
+			}
 		}
 		.content__txt {
 			margin: 1.5rem 0;
 			font-size: 1rem;
 			font-weight: 100;
 			line-height: 1.3rem;
+			@include mobile {
+				font-size: .8rem;
+				line-height: 1rem;
+			}
 		}
 		.content__note {
 			padding-top: 1rem;
 			font-weight: 100;
 			color: $lightBrown;
+			@include mobile {
+				display: none;
+			}
 		}
 	}
 	.cv__icons {
@@ -58,6 +97,9 @@
 		height: 100%;
 		@include flexCenter();
 		flex-direction: column;
+		@include mobile {
+			display: none;
+		}
 		.icons__icon {
 			height: 25%;
 			@include flexCenter();

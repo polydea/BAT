@@ -6,4 +6,8 @@
   color: $lightBrown;
   border-bottom: 2px solid $lightBrown;
   cursor: pointer;
+  @include mobile {
+    top: 1rem;
+    right: 1rem;
+  }
 }

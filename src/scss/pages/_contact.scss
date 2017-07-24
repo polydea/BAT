@@ -5,6 +5,7 @@
   flex-direction: column;
   @include mobile {
     width: 100%;
+    height: auto!important;
     justify-content: center;
     align-items: center;
   }
@@ -95,14 +96,17 @@
     }
   }
   .contact__mobile {
-    width: 100%;
-    height: 40%;
-    cursor: pointer;
-    color: $lightBrown;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: underline;
+    display: none;
+    @include mobile {
+      width: 100%;
+      height: 40%;
+      cursor: pointer;
+      color: $lightBrown;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: underline;
+    }
   }
   .contact__footer {
     width: 100vw;
@@ -112,8 +116,14 @@
     align-items: center;
     background-color: $lightBrown;
     color: $white;
+    @include mobile {
+      justify-content: center;
+    }
     .footer__icon {
       left: 5%;
+      @include mobile {
+        display: none;
+      }
       img {
         width: 40px;
         opacity: .3;
@@ -140,6 +150,9 @@
       }
       .footer__mentions, .footer__credits {
         width: 15%;
+        @include mobile {
+          font-size: .7rem;
+        }
       }
       .footer__mentions {
         text-align: right;

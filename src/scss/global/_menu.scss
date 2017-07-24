@@ -6,16 +6,23 @@
   position: fixed;
   padding-left: 1rem;
   color: $white;
-  @include mobile {
-    display: none;
-  }
   .socials__instagram {
     top: 6rem;
     left: 5rem;
+    @include mobile {
+      position: absolute;
+      top: 4rem;
+      left: 1rem;
+    }
   }
   .socials__facebook {
     top: 3rem;
     left: 5rem;
+    @include mobile {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+    }
   }
   .socials__facebook, .socials__instagram {
     width: 2rem;
@@ -41,6 +48,9 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    @include mobile {
+      display: none;
+    }
     ul {
       height: 100%;
       display: flex;

@@ -9,7 +9,7 @@ $(function scrollify() {
         easing: "easeOutExpo",
         scrollSpeed: 1100,
         offset: 0,
-        scrollbars: false,
+        scrollbars: true,
         standardScrollElements: "",
         setHeights: true,
         overflowScroll: true,
@@ -23,7 +23,6 @@ $(function scrollify() {
 * DISABLE SCROLLIFY ON MOBILE
 * * * */
 if (window.matchMedia("(max-width: 768px)").matches) {
-  $.scrollify.setOptions({scrollbars: true})
   $.scrollify.destroy();
   $.scrollify.disable();
 }

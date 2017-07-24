@@ -5,6 +5,12 @@
 	justify-content: center;
 	align-items: center;
 	transition: all 1.5s ease;
+	@include mobile {
+		width: 100%;
+		height: auto;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
 	.recipes__col {
 		width: auto;
 		height: 100%;
@@ -12,6 +18,11 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		@include mobile {
+			width: 90%;
+			height: 600px;
+			padding: 0;
+		}
 		.left__post {
 			height: 55%;
 			display: flex;
@@ -19,6 +30,10 @@
 			position: relative;
 			margin: 2rem;
 			cursor: pointer;
+			@include mobile {
+				height: 100%;
+				margin: 1rem auto;
+			}
 			&:hover {
 				img {
 					opacity: .5;

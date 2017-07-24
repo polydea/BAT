@@ -6,6 +6,9 @@
   position: fixed;
   padding-left: 1rem;
   color: $white;
+  @include mobile {
+    display: none;
+  }
   .socials__instagram {
     top: 6rem;
     left: 5rem;

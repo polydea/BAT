@@ -20,6 +20,14 @@ $(function scrollify() {
     });
 });
 /* * * *
+* DISABLE SCROLLIFY ON MOBILE
+* * * */
+if (window.matchMedia("(max-width: 768px)").matches) {
+  $.scrollify.setOptions({scrollbars: true})
+  $.scrollify.destroy();
+  $.scrollify.disable();
+}
+/* * * *
 * MENU LINKS
 * * * */
 $(".menu__item").click(function(){

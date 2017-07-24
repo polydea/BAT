@@ -5,6 +5,8 @@
   flex-direction: column;
   @include mobile {
     width: 100%;
+    justify-content: center;
+    align-items: center;
   }
   .contact__form {
     width: 88%;
@@ -14,11 +16,15 @@
     flex-direction: column;
     @include mobile {
       display: none;
+      width: 90%;
     }
     form {
       width: 50%;
       flex-flow: column wrap;
       color: $lightBrown;
+      @include mobile {
+        width: 100%;
+      }
       input, textarea {
         width: 100%;
         padding: 1.5rem 0;
@@ -29,6 +35,9 @@
       }
       .form__name, .form__surname {
         width: 48%;
+        @include mobile {
+          width: 100%;
+        }
       }
       .form__name {
         margin-right: 3%;

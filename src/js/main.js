@@ -20,11 +20,22 @@ $(function scrollify() {
     });
 });
 /* * * *
-* DISABLE SCROLLIFY ON MOBILE
+* CHECK IF MOBILE
 * * * */
 if (window.matchMedia("(max-width: 768px)").matches) {
+  /* * * *
+  * DISABLE SCROLLIFY
+  * * * */
   $.scrollify.destroy();
   $.scrollify.disable();
+  /* * * *
+  * CONTACT FORM MOBILE
+  * * * */
+  $(".contact__mobile").click(function(){
+    $(this).fadeOut();
+    $('.form__text').fadeOut();
+    $('.contact__form').css('display', 'block');
+  });
 }
 /* * * *
 * MENU LINKS

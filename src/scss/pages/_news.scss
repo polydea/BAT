@@ -5,16 +5,32 @@
   justify-content: flex-end;
   align-items: flex-start;
   z-index:2;
-  .news__left { 
+  @include mobile {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .news__left {
     width: 55%;
     height: 100vh;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     padding: 2rem 0;
+    @include mobile {
+      width: 100%;
+      height: auto;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: flex-start;
+    }
     img {
       width: 50px;
       margin-bottom: 1rem;
+      @include mobile {
+        width: 75px;
+      }
     }
     .left__houblon {
       opacity: .3;
@@ -27,6 +43,10 @@
       width: 45%;
       height: 30%;
       margin-bottom: 4rem;
+      @include mobile {
+        width: 90%;
+        margin-bottom: 2rem;
+      }
       .post__title {
         font-size: 2rem;
         font-weight: 600;
@@ -44,6 +64,10 @@
       @include flexCenter();
       flex-direction: column;
       text-align: center;
+      @include mobile {
+        width: 90%;
+        margin: 2rem 0;
+      }
       div {
         cursor: pointer;
         padding: 2rem;
@@ -55,6 +79,9 @@
     height: 100vh;
     display: flex;
     padding: .3rem 0;
+    @include mobile {
+      width: 90%;
+    }
     .right__one {
       width: 50%;
       max-height: 100%;

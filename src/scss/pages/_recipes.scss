@@ -28,7 +28,7 @@
 		align-items: center;
 		@include mobile {
 			width: 90%;
-			height: 600px;
+			height: auto;
 			padding: 0;
 		}
 		.left__post {
@@ -59,6 +59,10 @@
 			img {
 				height: 100%;
 				width: auto;
+				@include mobile {
+					width: 100%;
+					height: auto;
+				}
 			}
 			.post__title {
 				width: 30%;

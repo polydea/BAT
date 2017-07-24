@@ -9,6 +9,7 @@
     width: 100%;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     position: relative;
     overflow-x: scroll;
   }
@@ -46,7 +47,7 @@
       margin-bottom: 4rem;
       @include mobile {
         width: 90%;
-        height: 70vh;
+        height: 60vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -89,6 +90,19 @@
     padding: .3rem 0;
     @include mobile {
       width: 100%;
+      flex-direction: column;
+    }
+    .right__icon--mobile {
+      width: 100%;
+      display: none;
+      @include mobile {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        img {
+          width: 20vw;
+        }
+      }
     }
     .right__one {
       width: 50%;

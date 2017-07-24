@@ -99,7 +99,7 @@
     display: none;
     @include mobile {
       width: 100%;
-      height: 40%;
+      height: 100px!important;
       cursor: pointer;
       color: $lightBrown;
       display: flex;

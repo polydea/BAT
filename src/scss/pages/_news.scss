@@ -58,6 +58,7 @@
       .post__title {
         font-size: 2rem;
         font-weight: 600;
+        line-height: 2.3rem;
         color: $lightBrown;
         @include mobile {
           font-size: 2.5rem;

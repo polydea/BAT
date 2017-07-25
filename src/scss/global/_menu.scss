@@ -72,6 +72,9 @@
         color: $white;
         cursor: pointer;
         transition: all .3s ease;
+        &:hover {
+          color: $lightBrown;
+        }
         .item__line {
           width: 0;
           height: 3px;

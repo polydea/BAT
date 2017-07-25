@@ -17,6 +17,9 @@
         li {
           padding: .2rem;
           cursor: pointer;
+          &:hover {
+            font-weight: bold;
+          }
         }
       }
     }
@@ -43,6 +46,15 @@
         }
         .block__list {
           padding-bottom: 2rem;
+          ul {
+            li {
+              cursor: pointer;
+              transition: all .5s ease;
+              &:hover {
+                color: $lightBrown;
+              }
+            }
+          }
         }
       }
     }
@@ -99,7 +111,7 @@
       path {
         stroke: $lightBrown;
         fill: transparent;
-        stroke-width: 1px;  
+        stroke-width: 1px;
         animation: arrow 2s infinite;
       }
       path.a1 {

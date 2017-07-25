@@ -90,7 +90,8 @@
         max-height: 100px;
         max-width: 100px;
       }
-      p {
+      a {
+        display: inherit;
         line-height: 1.3rem;
       }
     }

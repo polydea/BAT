@@ -4,7 +4,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  z-index:2;
+  z-index: 2;
   @include mobile {
     width: 100%;
     flex-direction: column;
@@ -13,6 +13,7 @@
     position: relative;
     overflow: hidden;
   }
+
   .news__left {
     width: 55%;
     height: 100vh;
@@ -27,27 +28,31 @@
       align-items: center;
       justify-content: flex-start;
     }
+
     img {
-      width: 50px;
+      width: 60px;
       margin-bottom: 1rem;
       @include mobile {
         width: 100px;
       }
     }
+
     .left__houblon {
-      opacity: .3;
+      opacity: 0.3;
       transition: all 1s ease;
+
       &:hover {
         opacity: 1;
       }
     }
+
     .left__post {
       width: 45%;
-      height: 30%;
-      margin-bottom: 4rem;
+      height: 33%;
+      margin-bottom: rem;
       @include mobile {
         width: 90%;
-        height: auto ;
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -55,6 +60,7 @@
         text-align: center;
         margin-bottom: 2rem;
       }
+
       .post__title {
         font-size: 2rem;
         font-weight: 600;
@@ -64,18 +70,27 @@
           font-size: 2.5rem;
         }
       }
+
       .post__line {
         height: 2px;
         width: 30px;
         margin: 1.5rem 0;
         background-color: $lightBrown;
       }
+
       .post__content {
+        font-size: 1.05rem;
+        line-height: 1.05rem;
         @include mobile {
           font-size: 1.2rem;
         }
       }
     }
+
+    .left__three {
+      height: auto;
+    }
+
     .left__links {
       width: 45%;
       @include flexCenter();
@@ -86,21 +101,32 @@
         height: 50vh;
         margin: 2rem 0;
       }
+
       div {
         cursor: pointer;
         padding: 2rem;
+        img {
+          transition: transform 0.8s ease-in-out;
+        }
+        &:hover {
+          img {
+            transform: rotateY(180deg);
+          }
+        }
       }
     }
   }
+
   .news__right {
     width: 40%;
     height: 100vh;
     display: flex;
-    padding: .3rem 0;
+    padding: 0.3rem 0;
     @include mobile {
       width: 100%;
       flex-direction: column;
     }
+
     .right__icon--mobile {
       width: 100%;
       display: none;
@@ -108,11 +134,13 @@
         display: flex;
         justify-content: center;
         padding: 1rem;
+
         img {
           width: 20vw;
         }
       }
     }
+
     .right__one {
       width: 50%;
       max-height: 100%;
@@ -127,13 +155,14 @@
         margin: 0 auto;
         overflow-y: scroll;
       }
+
       .one__post {
         width: auto;
         max-height: 30%;
         display: flex;
         justify-content: flex-end;
         position: relative;
-        margin: .5rem;
+        margin: 0.5rem;
         overflow: hidden;
         @include mobile {
           width: 100vw;
@@ -142,11 +171,13 @@
           display: flex;
           justify-content: center;
         }
+
         &:hover {
           .post__content {
             opacity: 1;
           }
         }
+
         img {
           width: 100%;
           height: 100%;
@@ -156,6 +187,7 @@
             margin: 0 1rem;
           }
         }
+
         .post__content {
           position: absolute;
           padding: 1rem;
@@ -167,7 +199,7 @@
           height: 100%;
           width: 100%;
           opacity: 0;
-          transition: .5s ease;
+          transition: 0.5s ease;
           background-color: rgba(0, 0, 0, 0.6);
           @include mobile {
             width: 90vw;
@@ -176,83 +208,93 @@
         }
       }
     }
+
     .right__two {
-     width: 50%;
-     max-height: 100%;
-     display: flex;
-     flex-direction: column;
-     justify-content: flex-start;
-     align-items: center;
-     margin-right: .6rem;
-     @include mobile {
-       display: none;
-     }
-     .two__icon {
-      width: 100%;
-      height: 15vh;
-      align-self: flex-start;
-      @include flexCenter();
-      img {
-        width: 2rem;
-        opacity: .7;
-        transition: all 1s ease;
-        &:hover {
-          opacity: 1;
-        }
-      }
-    }
-    .two__post {
-      width: 100%;
-      max-height: 30%;
-      overflow: hidden;
+      width: 50%;
+      max-height: 100%;
       display: flex;
-      justify-content: flex-end;
-      position: relative;
-      margin: .5rem;
-      &:hover {
-        .post__content {
-          opacity: 1;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin-right: 0.6rem;
+      @include mobile {
+        display: none;
+      }
+
+      .two__icon {
+        width: 100%;
+        height: 15vh;
+        align-self: flex-start;
+        @include flexCenter();
+
+        img {
+          width: 3rem;
+          opacity: 0.7;
+          transition: all 1s ease;
+
+          &:hover {
+            opacity: 1;
+          }
         }
       }
-      img {
+
+      .two__post {
         width: 100%;
-        height: 100%;
-        cursor: pointer;
-      }
-      .post__content {
-        position: absolute;
-        padding: 1rem;
-        color: white;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: rgba(0, 0, 0, 0.6);
+        max-height: 30%;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        margin: 0.5rem;
+
+        &:hover {
+          .post__content {
+            opacity: 1;
+          }
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+        }
+
+        .post__content {
+          position: absolute;
+          padding: 1rem;
+          color: white;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: 0.5s ease;
+          background-color: rgba(0, 0, 0, 0.6);
+        }
       }
     }
   }
-}
-.right__indic--mobile {
-  display: none;
-  width: 100%;
-  height: 50px;
-  @include mobile {
-    display: flex;
-    justify-content: center;
-  }
-  span {
+
+  .right__indic--mobile {
+    display: none;
+    width: 100%;
+    height: 50px;
     @include mobile {
-      width: 15px;
-      height: 15px;
-      cursor: pointer;
-      margin: 1rem;
-      border-radius: 100%;
-      background-color: $lightBrown;
+      display: flex;
+      justify-content: center;
+    }
+
+    span {
+      @include mobile {
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+        margin: 1rem;
+        border-radius: 100%;
+        background-color: $lightBrown;
+      }
     }
   }
-}
 }

@@ -40,6 +40,7 @@ var w_news = new Waypoint({
     $('.item__home').removeClass('menu__item--active');
     $('.item__recipes').removeClass('menu__item--active');
     $('.item__contact').removeClass('menu__item--active');
+    recipesListHide();
 },
 offset: 100
 });
@@ -55,6 +56,7 @@ var w_news_top = new Waypoint({
     $('.item__home').removeClass('menu__item--active');
     $('.item__recipes').removeClass('menu__item--active');
     $('.item__contact').removeClass('menu__item--active');
+    recipesListHide();
 },
 offset: -100
 });
@@ -70,6 +72,8 @@ var w_recipes = new Waypoint({
     $('.item__news').removeClass('menu__item--active');
     $('.item__home').removeClass('menu__item--active');
     $('.item__contact').removeClass('menu__item--active');
+    eventsHide();
+    mediasHide();
 },
 offset: 100
 });
@@ -85,6 +89,8 @@ var w_recipes_top = new Waypoint({
     $('.item__news').removeClass('menu__item--active');
     $('.item__home').removeClass('menu__item--active');
     $('.item__contact').removeClass('menu__item--active');
+    eventsHide();
+    mediasHide();
 },
 offset: -100
 });

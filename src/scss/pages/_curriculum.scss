@@ -108,6 +108,10 @@
 			img {
 				width: 50%;
 				padding: 1rem;
+				transition: transform 0.8s ease-in-out;
+				&:hover {
+					transform: rotateY(180deg);
+				}
 			}
 			p {
 				font-weight: 100;

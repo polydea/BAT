@@ -85,9 +85,9 @@ $(".bar__section").click(function() {
  * * * */
 $(window).scroll(function(event) {
   var scroll = $(window).scrollTop();
-  eventsHide();
-  mediasHide();
-  recipesListHide();
+  // eventsHide();
+  // mediasHide();
+  // recipesListHide();
   if (scroll > 10) {
     $('.menu__menu').addClass('menu__menu--dark');
   }
@@ -102,17 +102,11 @@ $(window).scroll(function(event) {
  * * * */
 $('.icons__media').click(function() {
   $.scrollify.move("#News");
-  setTimeout(
-    function() {
-      mediasDisplay();
-    }, 1500);
+  mediasDisplay();
 });
 $('.icons__events').click(function() {
   $.scrollify.move("#News");
-  setTimeout(
-    function() {
-      eventsDisplay();
-    }, 1500);
+  eventsDisplay();
 });
 $('.icons__contact').click(function() {
   $.scrollify.move("#Contact");
@@ -212,8 +206,8 @@ $(document).ready(function() {
 });
 
 /* * * *
-* CONTACT FORM
-* * * */
+ * CONTACT FORM
+ * * * */
 $(".form__input").focus(function() {
   $(this).removeAttr('placeholder');
 });

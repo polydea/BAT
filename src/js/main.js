@@ -210,3 +210,10 @@ var recipesListHide = function() {
 $(document).ready(function() {
   $('.lazyimg').unveil();
 });
+
+/* * * *
+* CONTACT FORM
+* * * */
+$(".form__input").focus(function() {
+  $(this).removeAttr('placeholder');
+});

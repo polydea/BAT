@@ -28,8 +28,12 @@
       }
       input, textarea {
         width: 100%;
-        padding: 1.5rem 0;
+        padding: 1.5rem 0 .7rem 0;
+        margin: .5rem 0;
         border-bottom: 1px solid $lightBrown;
+        &::placeholder {
+          color: $lightBrown;
+        }
       }
       textarea {
         height: auto;
@@ -48,8 +52,11 @@
         min-height: 25px;
         cursor: pointer;
         margin-top: 1rem;
-        border-bottom: 2px solid $lightBrown;
         align-self: flex-start;
+        transition: all .5s ease;
+        &:hover {
+          border-bottom: 2px solid $lightBrown;
+        }
       }
     }
     .form__text {
@@ -89,6 +96,7 @@
         padding: 1rem;
         max-height: 100px;
         max-width: 100px;
+        transition: transform 0.8s ease-in-out;
       }
       a {
         display: inherit;

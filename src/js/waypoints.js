@@ -100,6 +100,7 @@ var w_contact = new Waypoint({
     $('.item__news').removeClass('menu__item--active');
     $('.item__recipes').removeClass('menu__item--active');
     $('.item__home').removeClass('menu__item--active');
+    $('.infos__img').css({'transform' : 'rotateY(180deg)'});
 },
 offset: 100
 });
@@ -115,6 +116,7 @@ var w_contact_top = new Waypoint({
     $('.item__news').removeClass('menu__item--active');
     $('.item__recipes').removeClass('menu__item--active');
     $('.item__home').removeClass('menu__item--active');
+    $('.infos__img').css({'transform' : 'rotateY(180deg)'});
 },
 offset: -100
 });

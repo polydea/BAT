@@ -21,6 +21,9 @@
       flex-direction: column;
       align-items: flex-start;
       padding: 3rem;
+      @include mobile {
+        padding: 1rem;
+      }
 
       .post__author {
         img {

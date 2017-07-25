@@ -3,6 +3,7 @@
 		justify-content: flex-start;
 	}
 }
+
 .recipes {
 	width: 88%;
 	height: 100vh;
@@ -15,10 +16,12 @@
 		height: auto;
 		flex-direction: column;
 		justify-content: flex-start;
+
 		.no-mobile {
 			display: none!important;
 		}
 	}
+
 	.recipes__col {
 		width: auto;
 		height: 100%;
@@ -31,6 +34,7 @@
 			height: auto;
 			padding: 0;
 		}
+
 		.left__post {
 			height: 55%;
 			display: flex;
@@ -42,20 +46,24 @@
 				height: 100%;
 				margin: 1rem auto;
 			}
+
 			&:hover {
 				img {
-					opacity: .5;
+					opacity: 0.5;
 				}
+
 				.post__title {
 					opacity: 1;
 				}
 			}
+
 			.post__next {
 				height: 20px;
 				color: $lightBrown;
 				border-bottom: 2px solid $lightBrown;
 				cursor: pointer;
 			}
+
 			img {
 				height: 100%;
 				width: auto;
@@ -64,6 +72,7 @@
 					height: auto;
 				}
 			}
+
 			.post__title {
 				width: 30%;
 				height: 100%;
@@ -74,7 +83,7 @@
 				position: absolute;
 				font-size: 1.6rem;
 				font-weight: 600;
-				transition: all .6s ease;
+				transition: all 0.6s ease;
 				opacity: 0;
 				@include mobile {
 					width: 100%;
@@ -82,12 +91,14 @@
 					padding: 1rem;
 					text-align: center;
 				}
+
 				h2 {
 					transform: translateX(-30%);
 					@include mobile {
 						transform: translateX(0);
 					}
 				}
+
 				.post__line {
 					height: 2px;
 					width: 30px;
@@ -99,11 +110,13 @@
 					}
 				}
 			}
+
 			.post__next {
 				cursor: pointer;
 				font-size: 1.2rem;
 			}
 		}
+
 		.left__indic--mobile {
 			display: none;
 			width: 100%;
@@ -112,6 +125,7 @@
 				display: flex;
 				justify-content: center;
 			}
+
 			span {
 				@include mobile {
 					width: 15px;
@@ -123,7 +137,29 @@
 				}
 			}
 		}
+
+		.left__post--link {
+			flex-direction: column;
+			justify-content: center;
+
+			&:hover {
+				img {
+					opacity: 1;
+				}
+			}
+
+			img {
+				width: 20%;
+				height: auto;
+				margin: 1rem 0;
+			}
+
+			div {
+				margin: 1rem 0;
+			}
+		}
 	}
+
 	.recipes__right {
 		width: 50%;
 	}

@@ -6,6 +6,9 @@
   align-items: flex-start;
   position: relative;
   transition: all 1.5s ease;
+  @include mobile {
+    height: auto!important;
+  }
   opacity: 1;
   .recipesList__left {
     width: 20%;
@@ -30,6 +33,12 @@
     display: flex;
     align-items: center;
     position: relative;
+    @include mobile {
+      height: auto;
+      .c__arrows {
+        display: none;
+      }
+    }
     .right__content {
       height: 70vh;
       width: 80%;
@@ -37,6 +46,11 @@
       align-items: center;
       flex-flow: column wrap;
       position: relative;
+      @include mobile {
+        width: 100%;
+        height: auto;
+        margin-top: 15vh;
+      }
       .content__block {
         .block__letter {
           color: $lightBrown;

@@ -146,6 +146,7 @@ $('.medias__close').click(function() {
 });
 
 var mediasDisplay = function() {
+  eventsHide();
   $('.news').addClass('news--hide');
   $('.medias--hide').addClass('medias');
   $('.medias--hide').removeClass('medias--hide');
@@ -167,6 +168,7 @@ $('.agenda__close').click(function() {
 });
 
 var eventsDisplay = function() {
+  mediasHide();
   $('.news').addClass('news--hide');
   $('.agenda--hide').addClass('agenda');
   $('.agenda--hide').removeClass('agenda--hide');

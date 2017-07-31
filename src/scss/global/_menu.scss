@@ -6,8 +6,8 @@
   position: fixed;
   padding-left: 1rem;
   color: $white;
-  z-index: 5;
-  transform: translateY(10vh);
+  z-index: 50;
+  transform: translateY(5vh);
   .socials__instagram {
     top: 6rem;
     left: 5rem;
@@ -34,7 +34,7 @@
     align-items: flex-end;
     flex-direction: column;
     z-index: 20;
-    transform: translateY(-10vh);
+    transform: translateY(-5vh);
     cursor: pointer;
     img {
       width: 100%;

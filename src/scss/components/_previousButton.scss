@@ -1,16 +1,7 @@
 .c__previousButton {
-  height: 20px;
   position: absolute;
   right: 3rem;
   top: 3rem;
-  color: $lightBrown;
-  border-bottom: 2px solid $lightBrown;
-  cursor: pointer;
-  opacity: .7;
-  transition: all .5s ease;
-  &:hover {
-    opacity: 1;
-  }
   @include mobile {
     top: 1rem;
     right: 1rem;

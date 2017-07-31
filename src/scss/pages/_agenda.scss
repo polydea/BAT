@@ -6,6 +6,13 @@
 	position: relative;
 	opacity: 1;
 	transition: all 1s ease;
+	@include mobile {
+		width: 100%;
+	}
+	.agenda__close {
+		position: absolute;
+		right: 3rem;
+	}
 	.agenda__content {
 		width: 65%;
 		height: 100%;
@@ -15,6 +22,9 @@
 		flex-flow: row wrap;
 		font-size: .8rem;
 		font-weight: lighter;
+		@include mobile {
+			width: 100%;
+		}
 		h2 {
 			font-size: 2rem;
 			font-weight: bold;
@@ -24,6 +34,10 @@
 			height: 40vh;
 			display: flex;
 			justify-content: center;
+			@include mobile {
+				height: auto;
+				flex-wrap: wrap;
+			}
 			.content__box {
 				width: 25%;
 				display: flex;
@@ -33,6 +47,9 @@
 				margin: .5rem;
 				padding: .5rem;
 				border: 2px solid #D0A84F;
+				@include mobile {
+					width: 50%;
+				}
 				.box__date {
 					font-size: 1.5rem;
 					font-weight: bold;
@@ -87,6 +104,9 @@
 		width: 35%;
 		height: 100%;
 		overflow: hidden;
+		@include mobile {
+			display: none;
+		}
 		img {
 			height: 100vh;
 		}

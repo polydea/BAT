@@ -27,8 +27,6 @@ var w_home_top = new Waypoint({
     $('.item__news').removeClass('menu__item--active');
     $('.item__recipes').removeClass('menu__item--active');
     $('.item__contact').removeClass('menu__item--active');
-    eventsHide();
-    mediasHide();
   },
   offset: -100
 });

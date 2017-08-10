@@ -7,10 +7,20 @@
   z-index: 10;
   opacity: 1;
   transition: all 1s ease;
+  @include mobile {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
   .medias__close {
     position: absolute;
     right: 3rem;
+    @include mobile {
+      right: 1rem;
+    }
   }
+
   .medias__col {
     width: 45%;
     height: 100%;
@@ -18,12 +28,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include mobile {
+      width: 100%;
+      flex: 1;
+      margin-bottom: 2rem;
+    }
 
     .col__post {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       padding: 1rem;
+      @include mobile {
+        width: 80%;
+        align-items: center;
+      }
 
       .post__author {
         img {
@@ -41,6 +60,10 @@
       .post__content {
         width: 35vw;
         padding-bottom: 1rem;
+        @include mobile {
+          width: auto;
+          text-align: center;
+        }
       }
     }
   }
@@ -74,6 +97,9 @@
         animation-delay: 0s;
       }
     }
+  }
+  .c__arrows {
+    left: 0;
   }
 }
 @keyframes arrow {

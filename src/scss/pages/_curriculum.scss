@@ -7,9 +7,16 @@
 	display: flex;
 	transition: all 1s ease;
 	@include mobile {
+		height: 100vh;
+		max-height: 100vh;
 		align-items: center;
 		justify-content: flex-start;
 	}
+
+	.CV__close {
+		position: absolute;
+	}
+
 	.cv__img {
 		width: 40%;
 		height: 100%;
@@ -21,9 +28,13 @@
 			height: 100vh;
 			width: 30vw;
 		}
+
 		img {
 			height: 70vh;
 			border-bottom: 5px solid $lightBrown;
+			@include medium {
+				height: 55vh;
+			}
 			@include mobile {
 				height: 100vh;
 				width: auto;
@@ -32,6 +43,7 @@
 			}
 		}
 	}
+
 	.cv__content {
 		width: 40%;
 		height: 100%;
@@ -39,6 +51,9 @@
 		flex-direction: column;
 		justify-content: center;
 		padding: 0 3rem;
+		@include medium {
+			padding: 0 1.5rem;
+		}
 		@include mobile {
 			width: 90%;
 			height: 100%;
@@ -50,51 +65,72 @@
 				padding: 1rem;
 			}
 		}
+
 		.content__author {
 			width: 70%;
 			font-weight: bold;
-			font-size: 2.5rem;
+			font-size: 2.7rem;
+			@include medium {
+				font-size: 1.5rem;
+				padding-bottom: 1rem;
+			}
 			@include mobile {
 				font-size: 1.3rem;
 				margin-top: 1rem;
 			}
 		}
+
 		.content__line {
 			height: 3px;
 			width: 25%;
 			margin: 1.5rem 0;
 			background-color: $lightBrown;
+			@include medium {
+				display: none;
+			}
 			@include mobile {
 				height: 2px;
 			}
 		}
+
 		.content__title {
 			width: 70%;
 			color: $lightBrown;
 			font-size: 1.5rem;
-			font-weight: 100;
+			font-weight: bold;
 			@include mobile {
 				width: 100%;
+				font-size: 1.3rem;
 			}
 		}
+
 		.content__txt {
 			margin: 1.5rem 0;
 			font-size: 1rem;
 			font-weight: 100;
 			line-height: 1.3rem;
+			@include medium {
+				font-style: 0.9rem;
+				line-height: 1.1rem;
+				margin: 1.3rem 0;
+			}
 			@include mobile {
-				font-size: 1rem;
-				line-height: 1.2rem;
+				font-size: 3vh;
+				line-height: 3.4vh;
 			}
 		}
+
 		.content__note {
 			padding-top: 1rem;
 			font-weight: 100;
 			color: $lightBrown;
-			@include mobile {
+			@include medium {
+				display: none;
 			}
+			@include mobile {}
 		}
 	}
+
 	.cv__icons {
 		width: 20%;
 		height: 100%;
@@ -103,19 +139,23 @@
 		@include mobile {
 			display: none;
 		}
+
 		.icons__icon {
 			height: 25%;
 			@include flexCenter();
 			flex-direction: column;
 			cursor: pointer;
+
 			img {
 				width: 50%;
 				padding: 1rem;
 				transition: transform 0.8s ease-in-out;
+
 				&:hover {
 					transform: rotateY(180deg);
 				}
 			}
+
 			p {
 				font-weight: 100;
 			}

@@ -8,6 +8,13 @@
   color: $white;
   z-index: 50;
   transform: translateY(5vh);
+  @include medium {
+    width: 16%;
+  }
+  @include mobile {
+    display: none;
+  }
+
   .socials__instagram {
     top: 6rem;
     left: 5rem;
@@ -17,6 +24,7 @@
       left: 1rem;
     }
   }
+
   .socials__facebook {
     top: 3rem;
     left: 5rem;
@@ -26,7 +34,9 @@
       left: 1rem;
     }
   }
-  .socials__facebook, .socials__instagram {
+
+  .socials__facebook,
+  .socials__instagram {
     width: 2rem;
     height: 2rem;
     position: fixed;
@@ -36,16 +46,19 @@
     z-index: 20;
     transform: translateY(-5vh);
     cursor: pointer;
+
     img {
       width: 100%;
       height: 100%;
-      opacity: .7;
-      transition: all .4s ease;
+      opacity: 0.7;
+      transition: all 0.4s ease;
+
       &:hover {
         opacity: 1;
       }
     }
   }
+
   .menu__menu {
     width: 85%;
     height: 50%;
@@ -55,13 +68,15 @@
     @include mobile {
       display: none;
     }
+
     ul {
       height: 100%;
       display: flex;
       justify-content: space-around;
       flex-direction: column;
+
       .menu__item {
-        display:flex;
+        display: flex;
         flex-direction: column;
         align-items: flex-end;
         line-height: 2rem;
@@ -71,54 +86,68 @@
         font-weight: 100;
         color: $white;
         cursor: pointer;
-        transition: all .3s ease;
+        transition: all 0.3s ease;
+
         &:hover {
           color: $lightBrown;
         }
+
         .item__line {
           width: 0;
           height: 3px;
           background-color: $lightBrown;
-          transition: all .3s ease;
+          transition: all 0.3s ease;
         }
       }
+
       .menu__item--active {
         color: $lightBrown!important;
         font-weight: 600;
+
         .item__line--home {
           width: 100%;
         }
+
         .item__line--news {
           width: 52%;
         }
+
         .item__line--recipes {
           width: 89%;
         }
+
         .item__line--contact {
           width: 78%;
         }
       }
     }
+
     .menu__bar {
       width: 5px;
       height: 100%;
       margin-left: 1rem;
       background-color: #FCF3D8;
+
       .bar__section {
         cursor: pointer;
         height: 25%;
-        transition: all .3s ease;
+        transition: all 0.3s ease;
       }
+
       .bar__section--active {
         background-color: $lightBrown;
       }
     }
   }
+
   .menu__menu--dark {
     ul {
       .menu__item {
         color: $black;
       }
+    }
+    .menu__bar {
+      background-color: $brown;
     }
   }
 }

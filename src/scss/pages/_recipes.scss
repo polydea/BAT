@@ -15,13 +15,19 @@
 	align-items: center;
 	transition: all 1.5s ease;
 	@include mobile {
-		width: 100%;
+		width: 100vw;
 		height: auto;
-		flex-direction: column;
+		overflow: scroll;
+		flex-direction: column-reverse;
 		justify-content: flex-start;
+		align-items: flex-start;
+	}
 
-		.no-mobile {
-			display: none!important;
+	.recipes__mobile--column {
+		@include mobile {
+			flex-direction: column-reverse!important;
+			flex-wrap: wrap;
+			display: flex!important;
 		}
 	}
 
@@ -34,8 +40,12 @@
 		align-items: center;
 		justify-content: center;
 		@include mobile {
-			width: 90%;
+			display: none;
+			width: 100vw;
 			height: auto;
+			flex-direction: column;
+			flex-wrap: wrap;
+			overflow: hidden;
 			padding: 0;
 		}
 
@@ -47,9 +57,15 @@
 			position: relative;
 			margin: 2rem;
 			cursor: pointer;
+			@include medium {
+				max-height: 33%;
+			}
 			@include mobile {
+				width: 50%;
 				height: 100%;
 				margin: 1rem auto;
+				justify-content: center;
+				flex: 1;
 			}
 
 			&:hover {
@@ -73,8 +89,10 @@
 				height: 100%;
 				width: auto;
 				@include mobile {
-					width: 100%;
-					height: auto;
+					width: auto;
+					max-width: 100vw;
+					height: 100%;
+					max-height: 35vh;
 				}
 			}
 
@@ -119,6 +137,9 @@
 			.post__next {
 				cursor: pointer;
 				font-size: 1.2rem;
+				@include mobile {
+					font-size: 1rem;
+				}
 			}
 		}
 
@@ -146,10 +167,14 @@
 		.left__post--link {
 			flex-direction: column;
 			justify-content: center;
+			@include mobile {
+				min-height: 35vh;
+			}
 
 			&:hover {
 				img {
 					opacity: 1;
+					transform: rotateY(180deg);
 				}
 			}
 
@@ -157,6 +182,10 @@
 				width: 20%;
 				height: auto;
 				margin: 1rem 0;
+				transition: transform 0.8s ease-in-out;
+				@include mobile {
+					width: 25%;
+				}
 			}
 
 			div {

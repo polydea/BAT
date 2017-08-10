@@ -8,107 +8,193 @@
 	transition: all 1s ease;
 	@include mobile {
 		width: 100%;
+		height: auto;
 	}
+
 	.agenda__close {
 		position: absolute;
 		right: 3rem;
+		@include mobile {
+			right: 1rem;
+		}
 	}
+
 	.agenda__content {
-		width: 65%;
+		width: 100%;
 		height: 100%;
 		display: flex;
-		justify-content: center;
-		align-content: center;
+		justify-content: flex-start;
+		align-items: flex-start;
 		flex-flow: row wrap;
-		font-size: .8rem;
+		font-size: 0.8rem;
 		font-weight: lighter;
 		@include mobile {
 			width: 100%;
 		}
+
 		h2 {
 			font-size: 2rem;
 			font-weight: bold;
-			padding: 1rem;
+			padding-top: 2rem;
+			padding-left: 5.5rem;
+			@include mobile {
+				width: 100%;
+				padding-top: 4rem;
+				padding-left: 0;
+				text-align: center;
+			}
+
+			span {
+				color: $lightBrown;
+			}
 		}
+
 		.content__row {
-			height: 40vh;
+			height: auto;
+			max-height: 90vh;
+			width: 100%;
 			display: flex;
 			justify-content: center;
+			flex-wrap: wrap;
+			padding: 1rem 5rem;
 			@include mobile {
 				height: auto;
+				max-height: inherit;
 				flex-wrap: wrap;
+				padding: 2.5rem 0;
 			}
+			.box__hover {
+				opacity: .7;
+				transition: all .4s ease;
+				&:hover {
+					opacity: 1;
+				}
+			}
+
 			.content__box {
-				width: 25%;
+				width: 20%;
+				height: 39vh;
+				max-width: 300px;
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
-				position:relative;
-				margin: .5rem;
-				padding: .5rem;
+				position: relative;
+				margin: 0.5rem;
+				padding: 0.5rem;
 				border: 2px solid #D0A84F;
 				@include mobile {
-					width: 50%;
+					width: 70%;
+					height: 50vh;
 				}
+
+				.content__bar {
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					cursor: pointer;
+					background-color: #D0A84F;
+					top: 0;
+					left: 0;
+					opacity: 0.2;
+				}
+
+				.content__month {
+					height: 100%;
+					width: 100%;
+					cursor: pointer;
+					display: flex;
+					flex-direction: column;
+
+					.month__title {
+						color: $lightBrown;
+						font-size: 1.5rem;
+						text-transform: uppercase;
+					}
+
+					.month__line {
+						height: 2px;
+						background-color: $lightBrown;
+						width: 30%;
+						margin: 2rem 0;
+					}
+				}
+
 				.box__date {
+					display: flex;
 					font-size: 1.5rem;
 					font-weight: bold;
 				}
+
 				.box__fb {
-					width: 15%;
+					width: 2vw;
 					position: absolute;
-					right: .5rem;
-					top: .5rem;
+					right: 0.5rem;
+					top: 0.5rem;
+					@include mobile {
+						width: 10vw;
+					}
+
 					img {
 						width: 100%;
+						opacity: 0.7;
+			      transition: all 0.4s ease;
+						&:hover {
+							opacity: 1;
+						}
 					}
 				}
+
 				.content__line {
 					height: 1.5px;
 					width: 10%;
-					margin: .5rem 0;
+					margin: 0.5rem 0;
 					background-color: black;
 				}
+
 				.box__txt {
 					.txt__titre {
 						font-size: 1.1rem;
 						font-weight: bold;
 					}
+
 					.txt__desc {
+						font-size: 0.8rem;
+						line-height: 1rem;
 						padding: 1rem 0;
 					}
-
 				}
+
 				.box__details {
 					width: 70%;
 					display: flex;
 					align-items: center;
 					position: relative;
-					padding: 0 .1rem;
-					font-size: .7rem;
+					padding: 0 0.1rem;
+					font-size: 0.7rem;
 					width: 100%;
 					height: auto;
+
 					img {
 						width: 10%;
 					}
+
 					.details__infos {
-						margin-left: .5rem;
-						font-size: .8rem;
+						margin-left: 0.5rem;
+						font-size: 0.9rem;
 						font-weight: bold;
 					}
 				}
 			}
 		}
 	}
-	.agenda__img {
-		width: 35%;
-		height: 100%;
-		overflow: hidden;
-		@include mobile {
-			display: none;
-		}
-		img {
-			height: 100vh;
-		}
+
+	.agenda__arrows {
+		width: 100%;
+		bottom: 0.1rem;
+	}
+
+	.agenda__arrows--top {
+		width: 100%;
+		top: 4rem;
 	}
 }

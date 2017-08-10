@@ -12,6 +12,7 @@ $(function scrollify() {
     scrollbars: true,
     standardScrollElements: "",
     setHeights: true,
+    touchScroll: false,
     overflowScroll: true,
     before: function() {},
     after: function() {},
@@ -26,8 +27,8 @@ if (window.matchMedia("(max-width: 768px)").matches) {
   /* * * *
    * DISABLE SCROLLIFY
    * * * */
-  $.scrollify.destroy();
-  $.scrollify.disable();
+  // $.scrollify.destroy();
+  // $.scrollify.disable();
   /* * * *
    * CONTACT FORM MOBILE
    * * * */
@@ -47,6 +48,9 @@ $(".home__arrows").click(function() {
  * MENU LINKS
  * * * */
 $(".menu__item").click(function() {
+  cvHide();
+  mediasHide();
+  eventsHide();
   switch (this.className) {
     case 'menu__item item__home':
       $.scrollify.move("#Accueil");
@@ -85,9 +89,6 @@ $(".bar__section").click(function() {
  * * * */
 $(window).scroll(function(event) {
   var scroll = $(window).scrollTop();
-  // eventsHide();
-  // mediasHide();
-  // recipesListHide();
   if (scroll > 10) {
     $('.menu__menu').addClass('menu__menu--dark');
   }
@@ -139,6 +140,8 @@ var cvHide = function() {
  * MEDIAS SHOWING
  * * * */
 $('.links__medias').click(function() {
+  $.scrollify.move("#News");
+  $.scrollify.update();
   mediasDisplay();
 });
 $('.medias__close').click(function() {
@@ -150,11 +153,13 @@ var mediasDisplay = function() {
   $('.news').addClass('news--hide');
   $('.medias--hide').addClass('medias');
   $('.medias--hide').removeClass('medias--hide');
+  $('.news').parent().css("height", "auto");
 };
 
 var mediasHide = function() {
   $('.medias').addClass('medias--hide');
   $('.news--hide').removeClass('news--hide');
+  $.scrollify.update();
 };
 
 /* * * *
@@ -168,6 +173,8 @@ $('.agenda__close').click(function() {
 });
 
 var eventsDisplay = function() {
+  $.scrollify.move("#News");
+  $.scrollify.update();
   mediasHide();
   $('.news').addClass('news--hide');
   $('.agenda--hide').addClass('agenda');
@@ -177,6 +184,7 @@ var eventsDisplay = function() {
 var eventsHide = function() {
   $('.agenda').addClass('agenda--hide');
   $('.news--hide').removeClass('news--hide');
+  $.scrollify.update();
 };
 
 /* * * *

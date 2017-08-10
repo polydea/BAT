@@ -5,8 +5,7 @@
   flex-direction: column;
   @include mobile {
     width: 100%;
-    height: auto!important;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
   .contact__form {
@@ -42,6 +41,7 @@
         width: 48%;
         @include mobile {
           width: 100%;
+          margin: 1rem;
         }
       }
       .form__name {
@@ -98,9 +98,14 @@
         max-width: 100px;
         transition: transform 0.8s ease-in-out;
       }
-      a {
+      a, p {
         display: inherit;
         line-height: 1.3rem;
+      }
+    }
+    .infos__phone {
+      @include mobile {
+        padding-bottom: 1rem;
       }
     }
   }
@@ -115,6 +120,7 @@
       justify-content: center;
       align-items: center;
       text-decoration: underline;
+      font-size: 1.3rem;
     }
   }
   .contact__footer {
@@ -159,12 +165,16 @@
       }
       .footer__mentions, .footer__credits {
         width: 15%;
+        text-align: center;
         @include mobile {
           font-size: .7rem;
         }
       }
       .footer__mentions {
         text-align: right;
+        @include mobile {
+          text-align: center;
+        }
       }
     }
   }
